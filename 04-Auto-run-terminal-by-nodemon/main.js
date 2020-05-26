@@ -1,7 +1,7 @@
 /* To use nodemon make these steps
     1. Make sure you are into the project folder
     2. Open terminal
-    3. Type --> npm init                // continue pressing Enter 
+    3. Type --> npm init -y               // -y --> yes uses the default
     4. Type --> npm install             
     5. type --> npm i -g nodemon@1.18.5      // i --> install   g --> global
 */

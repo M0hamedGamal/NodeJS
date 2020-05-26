@@ -11,14 +11,14 @@ const Object = {    // Object
     age: 24
 }
 
-const ConvertToJSON = JSON.stringify(Object)     // Convert from Object to Json
+const ConvertToJSON = JSON.stringify(Object)     // Convert from Object to String of Json
 
-FileSystem.writeFileSync('jsonFile.json', ConvertToJSON) // Write Json into file 
+FileSystem.writeFileSync('jsonFile.json', ConvertToJSON) // Write String of Json into file 
 
 const BufferData = FileSystem.readFileSync('jsonFile.json')  // Read data from file & return binary
 
 const  JsonData = BufferData.toString()  // Convert from binary to string
 
-const ConvertToObject = JSON.parse(JsonData)      // Convert from Json to Object
+const ConvertToObject = JSON.parse(JsonData)      // Convert from String of Json to Object
 
 console.log(ConvertToObject.name)    // Get name of Object

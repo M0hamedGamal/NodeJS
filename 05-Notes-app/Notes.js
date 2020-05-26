@@ -60,7 +60,7 @@ const readNote = (title) => {
 
 // Function to write the new note into file
 const saveNote = (notes) => {
-    const JsonData = JSON.stringify(notes)    // Convert Object to Json
+    const JsonData = JSON.stringify(notes)    // Convert Object to String of Json
 
     fs.writeFileSync('Notes.json', JsonData)    // Write Json Data into a file
 }
