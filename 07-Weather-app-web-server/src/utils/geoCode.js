@@ -19,7 +19,7 @@ const geoCode = (address, callback) => {
             longitude: data.features[0].center[0],   // features --> array & [0] --> get first oject..... center --> array & [0] --> get first value  
             latitude: data.features[0].center[1],    // features --> array & [0] --> get first oject..... center --> array & [1] --> get second value
             location: data.features[0].place_name
-        })   //  .. check url link      })  
+        })   //  .. check url link
         ).catch((e) => {
             callback(undefined, {Error: 'Invalid address...'})
         })
