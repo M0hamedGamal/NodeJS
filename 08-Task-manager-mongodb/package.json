@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "mongodb": "^3.1.10",
-    "mongoose": "^5.3.16",
+    "mongoose": "^5.7.5",
     "validator": "^10.9.0"
   },
   "devDependencies": {},
